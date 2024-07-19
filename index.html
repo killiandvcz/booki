@@ -9,88 +9,185 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="main-container">
-        <header></header>
-        <main>
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
-
-                </section>
-                <section class="populaires">
-                    <div class="populaires-title">
-                        <h2 class="section-title">Les plus populaires</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-                    </div>
-                    <div class="populaires-cards">
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Hôtel Le soleil du matin</h3>
-                                        <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
-                                        <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Hôtel Bleu et Blanc</h3>
-                                        <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </div>
-                </section>
+<div class="main-container">
+    <header>
+        <svg width="122" height="79" viewBox="0 0 122 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M35.5216 30C36.5787 30.0189 37.5037 30.2643 38.2966 30.7362C39.0894 31.2081 39.6935 31.8405 40.1088 32.6334C40.543 33.4262 40.7601 34.3229 40.7601 35.3234C40.7601 36.0596 40.6185 36.7581 40.3353 37.4188C40.071 38.0606 39.7029 38.6364 39.231 39.1461C39.9106 39.6557 40.4391 40.2881 40.8167 41.0432C41.2131 41.7983 41.4113 42.6289 41.4113 43.535C41.4113 44.4978 41.1754 45.385 40.7034 46.1967C40.2315 47.0084 39.5991 47.6597 38.8063 48.1505C38.0134 48.6225 37.1356 48.8584 36.1729 48.8584H30V30H35.5216ZM32.4918 32.5484V38.155H35.5216C36.2956 38.155 36.9468 37.8813 37.4754 37.3338C38.004 36.7864 38.2683 36.1162 38.2683 35.3234C38.2683 34.5306 38.004 33.8698 37.4754 33.3413C36.9657 32.8127 36.3145 32.5484 35.5216 32.5484H32.4918ZM32.4918 40.7034V46.31H36.1729C36.9468 46.31 37.5981 46.0457 38.1267 45.5171C38.6552 44.9697 38.9195 44.309 38.9195 43.535C38.9195 42.7422 38.6552 42.072 38.1267 41.5246C37.5981 40.9771 36.9468 40.7034 36.1729 40.7034H32.4918Z" fill="#0065FC"/>
+            <path d="M50.8452 49C49.8824 49 48.9669 48.8112 48.0985 48.4337C47.2302 48.0561 46.4656 47.537 45.8049 46.8763C45.1442 46.2156 44.6251 45.4511 44.2476 44.5827C43.87 43.7144 43.6812 42.7988 43.6812 41.8361C43.6812 40.8544 43.87 39.92 44.2476 39.0328C44.6251 38.1456 45.1442 37.3716 45.8049 36.7109C46.4656 36.0502 47.2302 35.5405 48.0985 35.1818C48.9669 34.8043 49.8824 34.6155 50.8452 34.6155C51.8268 34.6155 52.7612 34.8043 53.6485 35.1818C54.5357 35.5405 55.3097 36.0502 55.9704 36.7109C56.6311 37.3716 57.1408 38.1456 57.4994 39.0328C57.877 39.92 58.0657 40.8544 58.0657 41.8361C58.0657 42.7988 57.877 43.7144 57.4994 44.5827C57.1408 45.4511 56.6311 46.2156 55.9704 46.8763C55.3097 47.537 54.5357 48.0561 53.6485 48.4337C52.7612 48.8112 51.8268 49 50.8452 49ZM50.8452 37.1356C49.5804 37.1356 48.495 37.5887 47.5888 38.4948C47.1547 38.929 46.8149 39.4386 46.5695 40.0238C46.3241 40.609 46.2014 41.2131 46.2014 41.8361C46.2014 42.459 46.3241 43.0537 46.5695 43.62C46.8149 44.1863 47.1547 44.6865 47.5888 45.1207C48.023 45.5549 48.5138 45.8947 49.0613 46.1401C49.6276 46.3855 50.2222 46.5082 50.8452 46.5082C51.4681 46.5082 52.0722 46.3855 52.6574 46.1401C53.2426 45.8947 53.7428 45.5549 54.1581 45.1207C54.5734 44.6865 54.9038 44.1863 55.1492 43.62C55.3946 43.0537 55.5173 42.459 55.5173 41.8361C55.5173 41.2131 55.3946 40.609 55.1492 40.0238C54.9038 39.4386 54.5734 38.929 54.1581 38.4948C53.7428 38.0606 53.2426 37.7303 52.6574 37.5037C52.0911 37.2583 51.487 37.1356 50.8452 37.1356Z" fill="#0065FC"/>
+            <path d="M66.9388 49C65.9761 49 65.0605 48.8112 64.1922 48.4337C63.3238 48.0561 62.5593 47.537 61.8986 46.8763C61.2379 46.2156 60.7187 45.4511 60.3412 44.5827C59.9636 43.7144 59.7749 42.7988 59.7749 41.8361C59.7749 40.8544 59.9636 39.92 60.3412 39.0328C60.7187 38.1456 61.2379 37.3716 61.8986 36.7109C62.5593 36.0502 63.3238 35.5405 64.1922 35.1818C65.0605 34.8043 65.9761 34.6155 66.9388 34.6155C67.9204 34.6155 68.8549 34.8043 69.7421 35.1818C70.6293 35.5405 71.4033 36.0502 72.064 36.7109C72.7247 37.3716 73.2344 38.1456 73.5931 39.0328C73.9706 39.92 74.1594 40.8544 74.1594 41.8361C74.1594 42.7988 73.9706 43.7144 73.5931 44.5827C73.2344 45.4511 72.7247 46.2156 72.064 46.8763C71.4033 47.537 70.6293 48.0561 69.7421 48.4337C68.8549 48.8112 67.9204 49 66.9388 49ZM66.9388 37.1356C65.674 37.1356 64.5886 37.5887 63.6825 38.4948C63.2483 38.929 62.9085 39.4386 62.6631 40.0238C62.4177 40.609 62.295 41.2131 62.295 41.8361C62.295 42.459 62.4177 43.0537 62.6631 43.62C62.9085 44.1863 63.2483 44.6865 63.6825 45.1207C64.1167 45.5549 64.6075 45.8947 65.1549 46.1401C65.7212 46.3855 66.3159 46.5082 66.9388 46.5082C67.5618 46.5082 68.1658 46.3855 68.751 46.1401C69.3362 45.8947 69.8365 45.5549 70.2518 45.1207C70.6671 44.6865 70.9974 44.1863 71.2428 43.62C71.4882 43.0537 71.6109 42.459 71.6109 41.8361C71.6109 41.2131 71.4882 40.609 71.2428 40.0238C70.9974 39.4386 70.6671 38.929 70.2518 38.4948C69.8365 38.0606 69.3362 37.7303 68.751 37.5037C68.1847 37.2583 67.5806 37.1356 66.9388 37.1356Z" fill="#0065FC"/>
+            <path d="M83.5005 48.8584L79.1965 43.62V48.8584H76.7047V30.0283H79.1965V38.155L83.0475 34.5306H86.7569L80.046 40.7601L86.7852 48.8584H83.5005Z" fill="#0065FC"/>
+            <path d="M89.7871 32.6617C89.4285 32.6617 89.117 32.539 88.8527 32.2936C88.6073 32.0293 88.4846 31.7178 88.4846 31.3592C88.4846 31.0005 88.6073 30.6985 88.8527 30.4531C89.117 30.1888 89.4285 30.0566 89.7871 30.0566C90.1458 30.0566 90.4478 30.1888 90.6932 30.4531C90.9575 30.6985 91.0897 31.0005 91.0897 31.3592C91.0897 31.7178 90.9575 32.0293 90.6932 32.2936C90.4478 32.539 90.1458 32.6617 89.7871 32.6617ZM88.6262 48.8584V34.7004H91.0047V48.8584H88.6262Z" fill="#0065FC"/>
+            <path d="M68.4338 40.0097C68.4338 40.8094 67.7856 41.4577 66.9859 41.4577C66.1862 41.4577 65.5379 40.8094 65.5379 40.0097C65.5379 39.21 66.1862 38.5618 66.9859 38.5618C67.7856 38.5618 68.4338 39.21 68.4338 40.0097Z" fill="#0065FC"/>
+            <path d="M65.5379 44.6755L66.237 39.5271H67.8347L68.4339 44.6755H65.5379Z" fill="#0065FC"/>
+        </svg>
+        <nav>
+            <a href="#" class="active">Hébergements</a>
+            <a href="#">Activités</a>
+        </nav>
+    </header>
+    <main>
+        <div class="informations">
+            <div class="headline">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre-ville ou en pleine nature</p>
             </div>
-        </main>
-        <footer></footer>
-    </div>
+            <div class="searchbar">
+                    <span class="icon">
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.13594 17.5955C4.23281 15.3326 0 9.84814 0 6.76751C0 3.02987 3.13396 0 7 0C10.8646 0 14 3.02987 14 6.76751C14 9.84814 9.73438 15.3326 7.86406 17.5955C7.41562 18.1348 6.58437 18.1348 6.13594 17.5955ZM7 9.02335C8.28698 9.02335 9.33333 8.01175 9.33333 6.76751C9.33333 5.52328 8.28698 4.51168 7 4.51168C5.71302 4.51168 4.66667 5.52328 4.66667 6.76751C4.66667 8.01175 5.71302 9.02335 7 9.02335Z" fill="black"/>
+                        </svg>
+                    </span>
+                <input type="text" placeholder="Marseille, France" />
+                <button>Rechercher</button>
+            </div>
+            <div class="filters">
+                <span class="title">Filtres</span>
+                <span class="filter">
+                    <span class="icon">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.352 3.68473C20.0187 3.09418 18.6842 2.86951 17.3505 2.86951C13.1166 2.86914 8.88305 5.13224 4.64915 5.13224C3.58732 5.13224 2.52618 4.98995 1.46435 4.63425C1.34507 4.59432 1.22545 4.57545 1.10858 4.57545C0.516992 4.57545 0 5.05892 0 5.73004V17.2455C0 17.7039 0.248527 18.1384 0.647615 18.3148C1.981 18.9057 3.31542 19.1304 4.64915 19.1304C8.88305 19.1304 13.117 16.8673 17.3509 16.8673C18.4127 16.8673 19.4738 17.0096 20.5356 17.3653C20.6549 17.4052 20.7745 17.4241 20.8914 17.4241C21.483 17.4241 22 16.9406 22 16.2695V4.75439C21.9997 4.2956 21.7511 3.86149 21.352 3.68473ZM1.64997 6.50715C2.34159 6.69008 3.06345 6.78191 3.80594 6.83128C3.60382 7.89803 2.71558 8.702 1.64997 8.702V6.50715ZM1.64997 16.8517V15.1174C2.83142 15.1174 3.78738 16.1072 3.83997 17.346C3.06551 17.2803 2.34159 17.117 1.64997 16.8517ZM10.9998 14.4844C9.48082 14.4844 8.24987 12.924 8.24987 10.9999C8.24987 9.0755 9.48116 7.51547 10.9998 7.51547C12.5185 7.51547 13.7498 9.0755 13.7498 10.9999C13.7498 12.9247 12.5181 14.4844 10.9998 14.4844ZM20.3497 15.4927C19.7474 15.3334 19.1222 15.2441 18.4825 15.1864C18.6842 14.2398 19.4278 13.5211 20.3497 13.3977V15.4927ZM20.3497 6.92275C19.2879 6.78083 18.4639 5.84474 18.4312 4.68869C19.1029 4.76746 19.7406 4.91482 20.3497 5.14821V6.92275Z" fill="#0065FC"/>
+</svg>
+
+                    </span>
+                    <span class="text">Economique</span>
+                </span>
+                <span class="filter">
+                    <span class="icon">
+                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.2429 2.0625C13.2429 3.2016 12.3395 4.125 11.2261 4.125C10.1127 4.125 9.20931 3.2016 9.20931 2.0625C9.20931 0.923398 10.1127 0 11.2261 0C12.3395 0 13.2429 0.923398 13.2429 2.0625ZM10.89 15.125V20.625C10.89 21.3855 10.2891 22 9.54544 22C8.80175 22 8.20091 21.3855 8.20091 20.625V11.0387L7.0005 13.084C6.61815 13.7328 5.7921 13.9434 5.15555 13.5523C4.51899 13.1613 4.31308 12.3191 4.6956 11.666L7.1442 7.50234C7.87318 6.26055 9.1841 5.5 10.6001 5.5H11.8521C13.2681 5.5 14.579 6.26055 15.3101 7.50234L17.7555 11.666C18.1378 12.3191 17.9319 13.1613 17.2975 13.5523C16.6588 13.9434 15.8353 13.7328 15.453 13.084L14.2513 11.0387V20.625C14.2513 21.3855 13.6505 22 12.9068 22C12.1631 22 11.5622 21.3855 11.5622 20.625V15.125H10.89Z" fill="#0065FC"/>
+</svg>
+
+                    </span>
+                    <span class="text">Familial</span>
+                </span>
+                <span class="filter">
+                    <span class="icon">
+                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.503296 8.22829V7.98543C0.503296 5.05861 2.67408 2.56224 5.63376 2.08155C7.55447 1.76375 9.58689 2.38596 10.9877 3.75306L11.5033 4.25468L11.9802 3.75306C13.4197 2.38596 15.4135 1.76375 17.3728 2.08155C20.3334 2.56224 22.5033 5.05861 22.5033 7.98543V8.22829C22.5033 9.96595 21.7642 11.6283 20.458 12.8132L12.6935 19.8769C12.3713 20.17 11.9459 20.3333 11.5033 20.3333C11.0607 20.3333 10.6353 20.17 10.3131 19.8769L2.54818 12.8132C1.24365 11.6283 0.503309 9.96595 0.503309 8.22829H0.503296Z" fill="#0065FC"/>
+</svg>
+
+                    </span>
+                    <span class="text">Romantique</span>
+                </span>
+                <span class="filter">
+                    <span class="icon">
+                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.40057 1.21273C9.71396 0.92649 10.2001 0.930411 10.5135 1.21665C11.6224 2.23221 12.6631 3.32619 13.6354 4.51036C14.0774 3.94572 14.5796 3.33011 15.122 2.82821C15.4394 2.53805 15.9296 2.53805 16.247 2.83214C17.6372 4.12609 18.8144 5.83568 19.6421 7.45901C20.4577 9.05881 21.0001 10.6939 21.0001 11.8467C21.0001 16.85 16.9903 21.0769 12.0001 21.0769C6.95369 21.0769 3.00012 16.8461 3.00012 11.8428C3.00012 10.3371 3.7153 8.4981 4.82423 6.67872C5.94521 4.83189 7.52825 2.90664 9.40057 1.21273ZM12.0684 17.3127C13.0849 17.3127 13.9849 17.0382 14.8327 16.4893C16.5242 15.3365 16.9782 13.0309 15.9617 11.2193C15.7809 10.8664 15.3189 10.8429 15.0577 11.1409L14.0452 12.2898C13.78 12.5878 13.3019 12.5799 13.0528 12.2702C12.3899 11.4468 11.2046 9.97635 10.5296 9.14116C10.2765 8.82747 9.79432 8.82355 9.53718 9.13723C8.17914 10.8037 7.4961 11.8545 7.4961 13.0348C7.50012 15.7207 9.53316 17.3127 12.0684 17.3127Z" fill="#0065FC"/>
+</svg>
+
+                    </span>
+                    <span class="text">Nos pépites</span>
+                </span>
+            </div>
+            <div class="infobar">
+                <div class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="11.5" stroke="#D9D9D9"/>
+                        <path d="M13.3333 15.6829H12.6667V11.0074C12.6667 10.6381 12.3681 10.3395 12 10.3395H10.6667C10.2985 10.3395 10 10.6381 10 11.0074C10 11.3766 10.2985 11.6565 10.6667 11.6565H11.3333V15.6641H10.6667C10.2985 15.6641 10 15.9628 10 16.3321C10 16.7013 10.2985 17 10.6667 17H13.3333C13.7015 17 14 16.7013 14 16.3321C14 15.9628 13.7021 15.6829 13.3333 15.6829ZM12 9.00359C12.5523 9.00359 13 8.55503 13 8.00169C13 7.44835 12.5521 7 12 7C11.4479 7 11 7.44856 11 8.0019C11 8.55524 11.4477 9.00359 12 9.00359Z" fill="#0065FC"/>
+                    </svg>
+                </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+
+
+        </div>
+        <div class="hebergements-and-populaires">
+            <section class="hebergements">
+
+            </section>
+            <section class="populaires">
+                <div class="populaires-title">
+                    <h2 class="section-title">Les plus populaires</h2>
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                </div>
+                <div class="populaires-cards">
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                                    <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                                    <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel Bleu et Blanc</h3>
+                                    <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="column">
+            <span class="column-title">A propos</span>
+            <a href="#">Fonctionnement du site</a>
+            <a href="#">Conditions générales</a>
+            <a href="#">Données et confidentialité</a>
+        </div>
+        <div class="column">
+            <span class="column-title">Nos hébergements</span>
+            <a href="#">Charte qualité</a>
+            <a href="#">Proposer votre hotel</a>
+
+        </div>
+        <div class="column">
+            <span class="column-title">Assistance</span>
+            <a href="#">Centre d'aide</a>
+            <a href="#">Nous contacter</a>
+        </div>
+    </footer>
+</div>
 </body>
 
 </html>
