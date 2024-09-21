@@ -59,10 +59,10 @@ nav a {
     border-top: 4px solid transparent;
 }
 
-nav a.active{
-    border-top: 4px solid var(--main-color);
-    color: var(--main-color);
-}
+/*nav a.active{*/
+/*    border-top: 4px solid var(--main-color);*/
+/*    color: var(--main-color);*/
+/*}*/
 nav a:hover{
     color: var(--main-color);
     border-top: 4px solid var(--main-color);
@@ -456,8 +456,12 @@ footer{
                 height: 100%;
                 padding-bottom: 15px;
                 text-align: center;
+                border-bottom: 4px solid var(--main-bg-color) !important;
             }
-            a.active{
+            /*a.active{*/
+            /*    border-bottom: 4px solid var(--main-color) !important;*/
+            /*}*/
+            a:hover{
                 border-bottom: 4px solid var(--main-color) !important;
             }
         }
